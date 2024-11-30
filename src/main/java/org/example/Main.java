@@ -3,7 +3,7 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
         printEmployeeInfo();  //Задание 1,2
-        printParkInfo();     //Задgание 3
+        printParkInfo();     //Задание 3
     }
 
     private static void printEmployeeInfo() {
