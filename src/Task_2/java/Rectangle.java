@@ -12,12 +12,12 @@ class Rectangle implements Shape {
     }
 
     @Override
-    public double getPerimeter() {
+    public double calculatePerimeter() {
         return 2 * (width + height);
     }
 
     @Override
-    public double getArea() {
+    public double calculateArea() {
         return width * height;
     }
 
@@ -30,4 +30,4 @@ class Rectangle implements Shape {
     public String getBorderColor() {
         return borderColor;
     }
-}}
+}
