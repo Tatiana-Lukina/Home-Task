@@ -7,17 +7,17 @@ public class Main {
 
         // Создаем объекты собак и котов
         Dog dogBobik = new Dog("Бобик");
-        Cat catMurzik = new Cat("Мурзик");
+        Cat catBarsik = new Cat("Мурзик");
         Cat catVasya = new Cat("Вася");
 
         // Выполняем действия с собаками и котами
         dogBobik.run(500);
         dogBobik.swim(20);
-        catMurzik.run(205);
-        catMurzik.swim(5);
+        catBarsik.run(205);
+        catBarsik.swim(5);
 
         // Коты пытаются поесть из миски
-        Cat[] cats = {catMurzik, catVasya};
+        Cat[] cats = {catBarsik, catVasya};
         for (Cat cat : cats) {
             boolean isSatiated = cat.eat(bowl, 15);
             System.out.println(cat.name + " сытость после еды: " + (isSatiated ? "сыт" : "голоден"));
