@@ -4,9 +4,10 @@ public class Main {
     public static void main(String[] args) {
         // Task 1
         String[] words = {
-                "яблоко", "банан", "апельсин", "яблоко", "киви", "банан",
-                "виноград", "груша", "киви", "яблоко", "персик", "манго",
-                "виноград", "апельсин", "персик"
+                "apple", "banana", "orange", "apple", "grape",
+                "banana", "kiwi", "apple", "mango", "orange",
+                "peach", "kiwi", "plum", "banana", "lemon",
+                "apple", "melon", "lime", "grape", "fig"
         };
 
         // Создаем объект WordProcessor и запускаем метод processWords
@@ -23,14 +24,14 @@ public class Main {
         // Добавляем записи в телефонный справочник
         phoneBook.add("Smith", "123-456-7890");
         phoneBook.add("Jones", "987-654-3210");
-        phoneBook.add("Smith", "555-121-3434"); // Adding a second number for Smith
+        phoneBook.add("Smith", "555-121-3434"); // Добвлен второй номер для Smith
         phoneBook.add("Garcia", "111-222-3333");
         phoneBook.add("Garcia", "444-555-6666");
         // Поиск номеров по фамилии
         System.out.println("Smith's phone numbers: " + phoneBook.get("Smith"));
         System.out.println("Jones's phone numbers: " + phoneBook.get("Jones"));
-        System.out.println("Williams's phone numbers: " + phoneBook.get("Williams")); // Testing a last name that does not exist
-        System.out.println("Garcia's phone numbers: " + phoneBook.get("Garcia")); // Testing a last name with multiple entries
+        System.out.println("Williams's phone numbers: " + phoneBook.get("Williams")); // Проверка несуществующей фамилии
+        System.out.println("Garcia's phone numbers: " + phoneBook.get("Garcia")); // Проверка фамилии с несколькими записями
 
     }
 }
