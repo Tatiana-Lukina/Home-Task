@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 // Класс MainPage создан для соблюдения структурного подхода и наглядности использования паттерна Page Object.
-public class MainPage {
+public class Main {
     private final WebDriverWait wait;
 
     // Ищем название блока
@@ -47,7 +47,7 @@ public class MainPage {
     private WebElement cardPage;
 
     // Конструктор для инициализации элементов (ленивая инициализация)
-    public MainPage(WebDriver driver, WebDriverWait wait) {
+    public Main(WebDriver driver, WebDriverWait wait) {
         this.wait = wait;
         PageFactory.initElements(driver, this);
     }

@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class MainTests {
     private WebDriver driver;
     private WebDriverWait wait;
-    private MainPage mainPage;
+    private Main mainPage;
 
     @BeforeEach
     public void setupTest() {
@@ -28,7 +28,7 @@ public class MainTests {
         driver.manage().window().maximize();
         driver.get("https://www.mts.by/");
         // Объект созданного Page Object для взаимодействия со страницей
-        mainPage = new MainPage(driver, wait);
+        mainPage = new Main(driver, wait);
         mainPage.clickRejectCookies();
     }
 
