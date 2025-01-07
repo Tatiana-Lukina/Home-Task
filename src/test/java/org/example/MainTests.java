@@ -1,6 +1,5 @@
 package org.example;
 
-import io.qameta.allure.Owner;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -9,7 +8,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class MainTests extends BaserTest {
+public class MainTests extends BaseTest {
     private MainPage mainPage;
     private DropDownList dropDownList;
     private PaymentWindow paymentWindow;
@@ -142,7 +141,7 @@ public class MainTests extends BaserTest {
     // Проверяем наличие иконок платёжных систем
     @ParameterizedTest
     @ValueSource(strings = {"visa", "mastercard", "belkart", "mir", "maestro"})
-    public void testPaymentLogos(String logo) throws InterruptedException {
+    public void testPaymentLogos(String logo) {
         // Вводим данные перед проверкой логотипов
         mainPage.enterPhoneNumber("297777777");
         mainPage.enterSum("100");
@@ -169,7 +168,7 @@ public class MainTests extends BaserTest {
     }
 
     // Проверяем соответствие текста в пустых полях окна оплаты
-    @Owner("Сергей")
+
     @Test
     public void testPaymentFieldsPlaceholders() throws InterruptedException {
         mainPage.enterPhoneNumber("297777777");
